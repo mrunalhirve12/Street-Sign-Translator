@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block body %}
+	<head>
+		<title> Translate Street Sign</title>
+		<link rel = "stylesheet" type="text/css" href="/static/style.css"/>
+	</head>
+
+	<!--Form for posting the data-->
+	<h1> <p style = "color:blue; font-size:50px;">Translate street sign to English</p> </h1>
+	<html>
+		<body>
+
+			<form action="" method="post" enctype="multipart/form-data">
+				<fieldset> <legend>Upload your image here</legend>
+				<input id="image" name="image" required="required" type="file">
+				<br>
+				<input type="submit" value="Submit">
+			</form>
+
+</body>
+</html>
+{% endblock %}
+
+

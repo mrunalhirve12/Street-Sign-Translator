@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block body %}
+
+	<!--Retrieves the reviews-->
+	<h1> <p style = "color:blue; font-size:50px;"> Translate street sign to English </p> </h1>
+		<body>
+		
+		{% for record in data %}
+			<img src="{{ record.image_url }}">
+			<p> Extracted Text: {{ record.untranslated }}</p>
+			<p> Translated Text: {{ record.translated }}</p>
+		<hr>
+		{% endfor %}
+		</body>
+{% endblock %}

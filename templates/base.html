@@ -1,0 +1,19 @@
+<!Doctype html>
+<html>
+	<head>
+		<title> Translate Street Sign</title>
+		<link rel = "stylesheet" type="text/css" href="/static/style.css"/>
+	</head>
+	<body>
+		<div id="nav">
+		<!--Links for the navigation-->
+			<ul>
+				<li><a href="{{ url_for('imagetranslate') }}"> Translate your Image</a></li>
+				<li><a href="{{ url_for('records') }}">View all Translaed Images<a></li>
+			</ul>
+		</div>		
+		<div id="content">
+			{% block body %} {% endblock %}
+		</div>
+	</body>
+</html>
